@@ -14,8 +14,8 @@ html.onclick = function() {
 	list.appendChild(listItem);
 
 	listItem.onclick = function(e) {
-		e.stopProgagation();
+		e.stopPropagation();
 		var listContent = prompt("What is your new list item?");
-		this.textContext = listContent;
+		this.textContent = listContent;
 	}
 }

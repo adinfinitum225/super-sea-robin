@@ -7,12 +7,10 @@ document.body.appendChild(button);
 document.body.appendChild(text);
 button.textContent = count;
 text.textContent = count;
-title.textContent = "Testing";
 
 button.onclick = function() {
 	count += 1;
 	button.textContent = count;
 	text.textContent = count;
-	title.textContent = "This is your webpage";
 }
 
