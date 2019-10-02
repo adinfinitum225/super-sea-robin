@@ -4,10 +4,11 @@ html {
 		background-color: linen;
 }
 
+body {
+		margin: 0px 0px 20px 0px;
+}
+
 header {
-		background-color: black;
-		margin: -8px;
-		//grid-column: 1 / 5;
 		grid-area: header;
 }
 
@@ -16,6 +17,7 @@ header {
 		grid-template-areas:
 			"header"
 			"nav"
+			"clock"
 			"aside"
 }
 
@@ -25,36 +27,67 @@ header {
 			grid-template-areas:
 				"header header"
 				"nav    nav"
-				"aside  ."
+				"aside  clock"
+		}
+}
+
+@media (min-width: 1100px) {
+	.wrapper {
+			grid-template-columns: 1fr 4fr;
+			grid-template-areas:
+				"header header"
+				"nav    nav"
+				"aside  clock"
 		}
 }
 
 header h1 {
 		margin: 0px;
+		background-color: #331035;
 }
 
 nav {
+		position: sticky;
+		top: 0;
 		display: flex;
 		align-items: center;
 		font-family: 'Orbitron', sans-serif;
-		//border: 3px dotted red; 
+		background-image: linear-gradient(to bottom left, #331035 40%, #66CCFF 95%);
+		border-radius: 0px 0px 20px 0px;
 		grid-area: nav;
 }
 
 aside {
-		grid-are: aside;
+		padding: 10px;
+		grid-area: aside;
 }
 
 .nav-button {
 		flex-basis: 10vw;
-		background-color: lightgreen;
+		font-weight: bold;
+		color: #262626;
+		background-color: rgba(255, 163, 26, 0.90);
 		padding: 10px;
 		margin: 5px;
-		border: 3px solid black;
+		border: 3px solid #262626;
+		border-radius: 7px 7px 7px 7px;
 }
 
 .nav-button:hover {
-		background-color: seagreen;
+		background-color: rgba(255, 163, 26, 0.65);
+}
+
+#myClock {
+		font-family: 'Orbitron', sans-serif;
+		font-size: 4em;
+		color: #00EE00;
+		//background: black;
+		margin: 10px;
+		padding: 15px;
+		grid-area: clock;
+		min-width: 5em;
+		align-self: start;
+		justify-self: start;
 }
 
 ul {
@@ -65,14 +98,13 @@ ul {
 
 h1 {
 		font-family: 'Orbitron', sans-serif;
-		background-color: royalblue;
 		color: lightcyan;
-		border: 3px solid lightgrey;
 		padding: 5px 10px;
 }
 
 h2 {
 		font-family: 'Orbitron', sans-serif;
+		font-size: 1.3em;
 		background-color: #20B2AA;
 		padding: 8px 8px 3px;
 }
@@ -84,7 +116,7 @@ h2:hover {
 p {
 		font-family: 'Monda', serif;
 		color: black;
-		font-size: 1.2em;
+		font-size: 1em;
 		text-indent: 3em;
 }
 
