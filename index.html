@@ -2,24 +2,24 @@
 <html lang='en-US'>
 	<head>
 		<meta charset="utf-8">
-		<title>Adinfinitum's Page</title>
+		<title>Adinfinitum's Site</title>
 		<meta name="author" content="Zachary Wells">
-		<meta name="description" content="To do...">
+		<meta name="description" content="A website project to develop my skills and keep a record of my work.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="learning-style.css">
 
 	</head>
 
 
-	<body>
+	<body onload="startClock()">
 	<div class="wrapper">
 		<header>
-			<h1>This is my Webpage</h1>
-			<nav>
-					<div class="nav-button">Home</div>
-					<div class="nav-button">Sandbox</div>
-			</nav>
+			<h1>Welcome Home</h1>
 		</header>
+		<nav>
+				<div class="nav-button">Home</div>
+				<div class="nav-button">Sandbox</div>
+		</nav>
 
 
 		<aside id="about-section">
@@ -40,9 +40,11 @@
 			In summary, I'm just an amateur WebDev looking to go pro, so if you want to make that dream come true feel free to get in contact with me!
 			</p>
 		</aside>
+		<div id='myClock'></div>
 
 		<!--		<script src="button-test.js"></script> --> 
 	</div>
+	<script src="clock.js"></script>
 	</body>
 
 </html>
