@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Monda&display=swap");
+
+html {
+		background-color: linen;
+}
+
+header {
+		background-color: black;
+		margin: -8px;
+		//grid-column: 1 / 5;
+		grid-area: header;
+}
+
+body {
+		display: grid;
+		//grid-template-columns: 1fr 2fr 2fr;
+		//grid-auto-rows: minmax(100px, auto);
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"aside .";
+		grid-template-columns: 1fr 4fr;
+}
+
+header h1 {
+		margin: 0px;
+}
+
+nav {
+		display: flex;
+		align-items: center;
+		font-family: 'Orbitron', sans-serif;
+		//border: 3px dotted red; 
+		grid-area: nav;
+}
+
+aside {
+		grid-are: aside;
+}
+
+.nav-button {
+		flex-basis: 10vw;
+		background-color: lightgreen;
+		padding: 10px;
+		margin: 5px;
+		border: 3px solid black;
+}
+
+.nav-button:hover {
+		background-color: seagreen;
+}
+
+ul {
+		background-color: green;
+		padding: 10px;
+		border: 1px;
+}
+
+h1 {
+		font-family: 'Orbitron', sans-serif;
+		background-color: royalblue;
+		color: lightcyan;
+		border: 3px solid lightgrey;
+		padding: 5px 10px;
+}
+
+h2 {
+		font-family: 'Orbitron', sans-serif;
+		background-color: #20B2AA;
+		padding: 8px 8px 3px;
+}
+
+h2:hover {
+		transform: scaleY(1.1);
+}
+
+p {
+		font-family: 'Monda', serif;
+		color: black;
+		font-size: 1.2em;
+		text-indent: 3em;
+}
+
+a:visited {
+		color: maroon;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
