@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang='en-US'>
-	<head>
-		<meta charset="utf-8">
-		<title>Adinfinitum's Site</title>
-		<meta name="author" content="Zachary Wells">
-		<meta name="description" content="A website project to develop my skills and keep a record of my work.">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="learning-style.css">
+		<head>
+				<meta charset="utf-8">
+				<title>Adinfinitum's Site</title>
+				<meta name="author" content="Zachary Wells">
+				<meta name="description" content="A website project to develop my skills and keep a record of my work.">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="learning-style.css">
 
-	</head>
-
-
-	<body onload="startClock()">
-	<div class="wrapper">
-		<header>
-			<h1>Welcome Home</h1>
-		</header>
-		<nav>
-				<div class="nav-button">Home</div>
-				<div class="nav-button">Sandbox</div>
-		</nav>
+		</head>
 
 
-		<aside id="about">
-			<h2>About my website:</h2>
-			<p id="about-website">
-			Welcome to my personal website! If I didn't show you the website myself then I'm not sure how you ended up here, but I'm glad you decided to visit.
-			This page is both a self-taught learning project, and a record of my work.
-			Eventually I would love to have it filled with bits and pieces and odds and ends, but for now it's rather bare.
-			To view the source code go take a look at <a target="_blank" href="https://github.com/adinfinitum225/super-sea-robin/">the GitHub page</a>.
-			</p>
-			<h2>About myself:</h2>
-			<p id="about-me">
-			I'm just an old-school nerd; a fan of math, science, and everything sci-fi. Now I'm trying my hand at the exciting world of web development. 
-			Texas State University is my alma mater and I graduated in December of 2018 with a Bachelor's of Science in Mathematics and a minor in Chemistry. 
-			Some of my hobbies are practicing the piano, learning to sail, going kayaking, and pretty much anything else that involves the water 
-			(if artificial gills existed I'd probably live in the water). 
-			I love learning new things, so right now most of my free time is going toward this website and practicing my programming. 
-			In summary, I'm just an amateur WebDev looking to go pro, so if you want to make that dream come true feel free to get in contact with me!
-			</p>
-		</aside>
-		<aside id="clock">
-				<div id='myClock'></div>
-		</aside>
+		<body onload="startClock()">
+				<div class="wrapper">
+						<header>
+								<img src="adinfLogoWebsvg.svg" alt="My Site Logo" id="logo" width=100px height=100px>
+								<h1>Welcome Home</h1>
+						</header>
+						<nav>
+								<a href="index.html" class="nav-button">Home</a>
+								<a href="sandbox.html" class="nav-button">Sandbox</a>
+						</nav>
 
-	</div>
-	<script src="clock.js"></script>
-	</body>
+
+						<aside id="about">
+								<h2>About my website:</h2>
+								<p id="about-website">
+								Welcome to my personal website! If I didn't show you the website myself then I'm not sure how you ended up here, but I'm glad you decided to visit.
+								This page is both a self-taught learning project, and a record of my work.
+								Eventually I would love to have it filled with bits and pieces and odds and ends, but for now it's rather bare.
+								To view the source code go take a look at <a class="link" target="_blank" href="https://github.com/adinfinitum225/super-sea-robin/">the GitHub page</a>.
+								</p>
+								<h2>About myself:</h2>
+								<p id="about-me">
+								I'm just an old-school nerd; a fan of math, science, and everything sci-fi. Now I'm trying my hand at the exciting world of web development. 
+								Texas State University is my alma mater and I graduated in December of 2018 with a Bachelor's of Science in Mathematics and a minor in Chemistry. 
+								Some of my hobbies are practicing the piano, learning to sail, going kayaking, and pretty much anything else that involves the water 
+								(if artificial gills existed I'd probably live in the water). 
+								I love learning new things, so right now most of my free time is going toward this website and practicing my programming. 
+								In summary, I'm just an amateur WebDev looking to go pro, so if you want to make that dream come true feel free to get in contact with me!
+								</p>
+						</aside>
+						<section id="content">
+								<time datetime=" " id='myClock'></time>
+						</section>
+
+				</div>
+				<script src="clock.js"></script>
+		</body>
 
 </html>
 

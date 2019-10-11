@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron|Monda|Major+Mono&display=swap");
 
 html {
-		background-color: linen;
+		background: linen;
 }
+
 
 body {
 		margin: 0px 0px 20px 0px;
@@ -10,6 +11,13 @@ body {
 
 header {
 		grid-area: header;
+		background: #331035;
+		display: flex;
+		align-items: center;
+}
+
+#logo {
+		padding: 10px;
 }
 
 .wrapper {
@@ -17,27 +25,29 @@ header {
 		grid-template-areas:
 			"header"
 			"nav"
-			"clock"
+			"content"
 			"aside"
 }
 
-aside#clock {
-		grid-area: clock;
+#content {
+		grid-area: content;
 		justify-self: center;
-		border: 3px red dotted;
+		//border: 3px red dotted;
 }
 
 #myClock {
-		font-family: 'Major Mono', monospace;
+		font-family: 'Space Mono', monospace;
 		font-size: 15vw;
 		text-align: center;
 		color: #00EE00;
+		text-shadow: 0px 2px 5px #22EE22;
 		width: 80vw;
 		background: black;
-		border: 3px solid grey;
+		border: 6px double lightcyan;
 		border-radius: 10px;
 		margin: 10px;
-		padding: 15px;
+		padding: 5px 15px;
+		display: block;
 		user-select: none;
 		-moz-user-select: none;
 }
@@ -48,10 +58,10 @@ aside#clock {
 			grid-template-areas:
 				"header header"
 				"nav    nav"
-				"aside  clock"
+				"aside  content"
 		}
 	
-	aside#clock {
+	#content {
 			display: grid;
 			justify-self: stretch;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -71,10 +81,10 @@ aside#clock {
 			grid-template-areas:
 				"header header"
 				"nav    nav"
-				"aside  clock"
+				"aside  content"
 		}
 
-	aside#clock {
+	#content {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
@@ -82,7 +92,6 @@ aside#clock {
 
 header h1 {
 		margin: 0px;
-		background-color: #331035;
 }
 
 nav {
@@ -91,13 +100,17 @@ nav {
 		display: flex;
 		align-items: center;
 		font-family: 'Orbitron', sans-serif;
-		background-image: linear-gradient(to bottom left, #331035 40%, #66CCFF 95%);
+		background-image: linear-gradient(to bottom left, #331035 50%, #66CCFF 95%);
 		border-radius: 0px 0px 20px 0px;
 		grid-area: nav;
 }
 
 aside#about {
 		padding: 10px;
+		margin: 5px;
+		background: #111111;
+		border: 6px double lightcyan;
+		border-radius: 20px;
 		grid-area: aside;
 }
 
@@ -105,6 +118,7 @@ aside#about {
 .nav-button {
 		flex-basis: 10vw;
 		font-weight: bold;
+		text-decoration: none;
 		color: #262626;
 		background-color: rgba(255, 163, 26, 0.90);
 		padding: 10px;
@@ -117,13 +131,12 @@ aside#about {
 		background-color: rgba(255, 163, 26, 0.65);
 }
 
-
-
-ul {
-		background-color: green;
-		padding: 10px;
-		border: 1px;
+article {
+		background-color: #111;
+		border: 6px double lightcyan;
+		border-radius: 20px;
 }
+
 
 h1 {
 		font-family: 'Orbitron', sans-serif;
@@ -144,16 +157,16 @@ h2:hover {
 
 p {
 		font-family: 'Monda', serif;
-		color: black;
+		color: lightcyan;
 		font-size: 1em;
 		text-indent: 3em;
 }
 
-a:visited {
-		color: maroon;
+a.link:visited {
+		color: pink;
 }
 
-a:hover {
+a.link:hover {
 		text-decoration: none;
 }
 
